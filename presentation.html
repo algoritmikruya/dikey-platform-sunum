@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikaye Sunumu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 10vh;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+        .title-box {
+            background-color: #8B0000; /* Şarap Kırmızısı */
+            color: white;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .main-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .platform-title-box {
+            background-color: #a0a8b4; /* Arka plandan biraz daha koyu gri */
+            color: #1f2937;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .platform-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .subtitle {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .story-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .story-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #8B0000; /* Şarap Kırmızısı */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #8B0000; /* Şarap Kırmızısı */
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+        .motto {
+            text-align: center;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        .card-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+        }
+        .nav-link {
+            display: inline-block;
+            background-color: #8B0000;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #6a0000;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .story-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Başlık Bölümü -->
+        <div class="title-box">
+            <h1 class="main-title">SENİ KENDİME SAKLADIM</h1>
+            <h2 class="subtitle">“Ebruli”</h2>
+        </div>
+
+        <!-- Dikey Platform Başlığı -->
+        <div class="platform-title-box">
+            <h3 class="platform-title">DİKEY PLATFORM DİZİ PROJESİ</h3>
+        </div>
+        
+        <!-- Görsel Bölümü -->
+        <div class="image-container">
+            <img class="story-image" src="https://raw.githubusercontent.com/algoritmikruya/sebnem/refs/heads/main/ebruli.png" alt="Hikaye Kapağı">
+        </div>
+
+        <!-- Hikaye Bölümleri -->
+        <div class="story-section">
+            <div class="story-card">
+                <h3 class="card-title">Genel Hikaye</h3>
+                <p class="card-text motto">
+                    Gölgelerden kurtulmak için yüzünü Işığa dön...
+                </p>
+                <p class="card-text">
+                    Annesini, çok erken yaşlarında kaybeden Ebru, bu hayatta namusu ve ilkeleri için yaşayan babası İlker bey tarafından, disiplinli ve ahlaklı bir şekilde büyütülmüş, babasının servetine rağmen asla bir şımarıklığı olmamış, yaşıtlarına ve çağına göre olgun tavırlı, dış güzelliğinin ise asla gizlenemediği bir kızdır.
+                    
+                    Çocukluğundan beri göz bebeği, bir tanesi olan, mühendis babası ile şehir şehir gezmiş; yaşarken kaçıp kurtulmak, başka şehirlere gittiğinde ise özlemle geri dönmek istemiştir bildiği, tanıdığı küçük dünyasına. Farklı hayatları merak etse de sınırlarını aşmak istese de babasının yanında, memleketi Seferihisar’da olmak her zaman güvenli bir liman olmuştur Ebru için.
+                    <br><br>
+                    İçten içe, hayatın anlamını bulmak, dünyayı yorumlamak, özgürlüğünü keşfedip, yapacaklarıyla yaşıtlarına örnek olmak istediğini anladığında, babasıyla ilk kez ters düşmüşler fakat İlker Bey, biricik kızının bu aşkını görmüş ve üniversite kararına saygı duymuştur… Bilmeseler de birlikte son kahvelerini içtikleri o gün; “ Bana söz ver!” demiştir İlker Bey, “ Benim kızım başkalarına benzemeyecek. Ne şartta olursa olsun ahlakını, namusunu, geleneklerini kaybetmeyecek. Baba ocağından beyaz gelinliği ile çıkıp, beyaz kefeniyle toprağa gireceği güne kadar tertemiz kalacak bu hayatta… ’’ Ebru göz yaşlarıyla babasına sarılmış, ömür boyu tutacağı sözler vermiştir. ‘’Söz babam, ölene kadar sözümdür sana…”
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h3 class="card-title">En Büyük Sınav</h3>
+                <p class="card-text">
+                    Artık gözü, Güzel Sanatlar sınavlarından başka bir şey görmeyen Ebru’nun hayatı, o gün babasının, aniden ortadan kaybolması ile birden bire değişir. İstanbul’a giden babası İlker beyden bir türlü haber alamayan Ebru, kayıp başvurusu da yapmış fakat üç gündür ne bir iz, ne de bir haber alamamıştır. Çalmadık kapı, aramadık dost bırakmaz ama babasının izine ulaşamaz. Tek bildiği, İstanbul’da birkaç işini halledip, döneceğidir. Onu son aradığında ise; bir süre önce vefat eden askerlik arkadaşı Kemal Beyler’in evinde olduğunu, oradan ayrılır ayrılmaz arayacağını söylemiştir. Fakat bir daha da ulaşamamıştır babasına. Delirmek üzeredir Ebru, ilk defa kendisini yalnız hissetmiş, kapısını çalacağı bir dost, bir akrabası olsun istemiştir. Ama o defterleri de babası kapatmıştır yıllar önce… Daha fazla dayanamaz kalkıp İstanbul’a, babasının rahmetli arkadaşı Kemal bey ve eşi Nilay hanımın evine gitmeye karar verir. Ebru ve babası yıllar önce, Nilay hanımlara misafir olmuşlar, en son da cenaze için gitmişlerdir. Arayıp, sormak, önceden haber vermek ister ama numaralarına ulaşamaz, sosyal medyadan adreslerini bulup, oradan yazar yine cevap alamaz. Kalkıp gitmekten başka çaresi yoktur. Gidip kendini hatırlatacak, yardım isteyecektir. İlk otobüse atlar...
+                    <br><br>
+                    İstanbul’a vardığında akşam olmak üzeredir. Uykusuz geçen gecelerin ardından yorgun düşmüş, İstanbul’un kalabalık caddelerinde Nilay Hanımların evine nasıl gideceğini hatırlamaya çalışırken, bir an inanamasa da babasını gördüğünü zannedip, bir adamın peşine düşer. Kafası öyle karışık, öyle bitkindir ki babasına benzettiği adamdan azar işitirken, tantanacıların da oyununa gelip, cüzdanını, telefonunu çaldırır. Can havliyle bindiği taksiyle, zorlukla da olsa hatırladığı konağa geldiğinde tüm parasını kaptırdığını ancak fark eder. Taksicinin fırsatçı ve ısrarcı tacizlerinden zor kurtulan Ebru’yu, İstanbul kendisine en yakışan şekilde karşılar.
+                    <br><br>
+                    Sonunda, babasının arkadaşının dul eşi, Nilay hanımların villasına ulaşır. Onu ilk karşılayan Boran olur. Boran, bu anlamlı bakışları, derin gözleri, bir an ceylan kadar ürkek, bir an kaplan kadar cesur olan bu kızı artık asla unutmayacaktır. Bildiği, tanıdığı, o mütevazi dünyasına ne kadar da yakındır bu kız. Ebru’nun bu evle ne işi olabileceğini sorgularken, Nilay hanımın oğlu Ateş’in, günübirlik takıldığı kızlardan biri olmadığını daha ilk görüşte anlamıştır. Asla buradaki dünyaya ait olamayacak kadar saf, dokunmaya kıyılamayacak kadar narindir. Onu, daha Nilay hanımların evine varmadan geri döndürmek istese de Ebru’ya engel olamaz. Ama o an karar verir. Bu kızı bırakmayacak, “o evden” koruyup kollayacak, ona yardım edecektir.
+                    <br><br>
+                    Rahmetli Kemal beyin okuttuğu, neredeyse oğlu Ateş kadar kıymet verdiği Boran, ailenin de avukatıdır. Bu evde yaşamasa da burada yaşananları tasvip etmese de ailenin bir üyesi gibi, sık sık gelip gitmektedir. Ebru ile yan yana geldikleri ilk andan bellidir bir parçanın, doğru iki yarısı oldukları. O da Ebru gibi iyi yetişmiş, dürüst, çalışkan, erdemli bir gençtir.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h3 class="card-title">Ve Ebru'nun Yeni Hayatı Başlar...</h3>
+                <p class="card-text">
+                    Ebru ise hiç bilmediği bu dünyaya adım attığında, hayatının tuzla buz olacağını, bildikleriyle, merak ettiklerinin onu nasıl da bambaşka yerlere sürükleyeceğini hesap etmeden, sadece babasını bulmak ister. Yalnız, çaresiz ve güçsüzdür girdiği bu hayatta. Tek mirası, babasına verdiği sözleri, erdemi ve ahlakıdır. Sadece Nilay Hanımın sırlar ve karanlıklarla dolu görkemli malikanesi değil, bu büyük şehrin pırıltılı karmaşası, merak ettiği bu dünya ve aklında bile olmasa da kaderinde olan iki aşkın arasında kalması Ebru’nun en büyük sınavı olacaktır.
+                    <br><br>
+                    İlk sınavını bir yanlışlık üzerine Ateş ile yaşar Ebru. Okkalı bir tokatla haddini bildirdiği bu adamdan olabildiğince uzak durmak istese de ateşle barut misali, aynı evde çok da kolay olmayacaktır. Nilay hanımın yakışıklı, etkileyici bir o kadar da serseri ruhlu oğlu Ateş, kadınlar tarafından güvenilmez, nerde sabah orda akşam bir gençtir. Kız kardeşi Arzu’nun, şaka yollu da olsa “ Ne o artık varoş fantezin mi var ” diyerek dalga geçtiği Ebru’yu, “o sabah kendi yatağında gördüğünde” kafasına koymuş ama nasıl olduysa, ilk kez bir kadına deli gibi dokunmak istese de elini bile sürememiştir. Bu duygunun gerçek aşk olduğunu kısa zamanda anlayacaktır Ateş… Diğer kadınlardan farklı bir şey vardır onda… İçine çektiği kokusu, teni, ruhu, gözleri bambaşkadır. Bilmediği ama merak ettiği bu heyecan onu harekete geçirir. Ve Ebru kaçsa da onun uzak durmaya niyeti yoktur.
+                    <br><br>
+                    Hayatı boyunca Boran’la kıyaslanmış olan Ateş ve ona her zaman mesafeyle yaklaşan Boran, birbirlerinden hiç hoşlanmazlar. Ateş, onun gibi ahlaklı, çalışkan olmadığı için babası tarafından eleştirilerek yetişmiş, kendi kanından, sınıfından bile olmayan bu adamla kıyaslanmak onu tam tersine etkilemiş, bencil, duyarsız, zevk düşkünü biri olup çıkmıştır. Sevgisini göstermeyi otorite eksikliği sayan, saygı görmek içinse şiddete bile başvuran “rahmetli!’ babasının cenazesine bile gitmemiştir Ateş. Sözde uçağı kaçırmış, yetişememiştir. Ne üzülmüştür son görevinin yapıp, babasını omuzlarında taşıyamadığı için… Babalarından deli gibi korkan Ateş ve Arzu, Kemal beyin işleri için aylarca kaldığı yurt dışı seyahatlerinde iyice dağıtmış, çığırından çıkmışlardır. Arkalarını toplayan ise hep Boran olmuştur. Sadece kendine tapan, egoist bir kadın olan Nilay ise sanki anneliği Kemal Bey’e göstermelik bir görev gibi yapmış, hiçbir zaman gerçek anlamda çocuklarıyla ilgilenmemiş, onlara annelik etmemiştir… Dışarıdan birbirlerine sıkıca bağlı, sevgi dolu bir aile gibi görünseler de bu sahte dünyalarında, Kemal Bey’in ölümü, bütün aileyi yasa boğmamıştır o yüzden. Bilakis dışarıya karşı bir süre yas tutan Nilay ve çocukları kısa sürede kendi hayatlarına dönmüş ve Kemal Bey’in kalan mirasını da hakkıyla yemeye başlamışlardır. Mirastan daha fazla olan borçlar ise şimdilik sadece Boran’ın umurundadır. Ateş’in ve Arzu’nun yaşam tarzlarını, yozlaşmış ilişkilerini, evde ardı ardına kesilmeyen, kimin eli kimin cebinde belli olmayan partilerini asla onaylamayan Boran, Kemal Bey’e vefa duygusu olmasa Ateş’in yüzüne bile bakmayacak, bu eve adımını atmayacaktır. Fakat bu vefa duygusuna bir de aşk eklenmiştir. Vicdanının, duygularının adamıdır Boran… Tek taraflı da olsa, şimdilik sadece anne dediği, anneannesi Hayriye hanımla paylaşsa da, Ebru, bu evde kaldığı sürece Boran da onun yanında olacaktır.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h3 class="card-title">Sırlarımız</h3>
+                <p class="card-text">
+                    İlker Bey’e ne oldu?
+                    <br><br>
+                    BAŞA DÖNELİM
+                    <br><br>
+                    Ebru’nun babası İlker Bey’i, asker arkadaşı Kemal, apar topar İstanbul’a çağırır. Çözülmesi gereken eski bir konu vardır. Duyduklarına inanmamış olsa da Kemal, arkadaşı İlker ve karısı Nilay’ı yüzleştirecektir. Nilay gençliğinde İlker’e aşık olmuş fakat İlker onunla birlikte olsa da kadınla evlenmemiş, Nilay’ın anlatımıyla yüz üstü bırakmıştır. Nilay ise hırs yapmış, bir zamanlar asker arkadaşı, o zamanlar ise en yakın arkadaşı olan Kemal beyi ayartmış ve sonunda evlenmiştir onunla. Nilay, büyük bir kavga sırasında, bilerek ve isteyerek, canını yakmak için bunları Kemal’e anlatmış, artık iflas etmiş bir iş adamı olan kocasına nefretini kusmuştur. Kemal duyduklarıyla yıkılsa da İlker’i çağırıp bir kez de ondan dinlemek ister gerçekleri. İlker Bey, bu zor durumda bile yalan söyleyemez ve geçmişte kaldığını anlatarak kabul eder. Kısa bir süre sonra, yaşadığı bu ağır durumu kaldıramayan ve kafasında sürekli bu ilişkinin belki de hiçbir zaman bitmediğini kuran Kemal, kalp krizi geçirir ve ölür. İlker’in İstanbul’daki cenazeye gitmesinin bir sebebi de içindeki suçluluk duygusudur. 
+                    <br><br>
+                    Nilay, cenazeden bir süre sonra, iş için tekrar İstanbul’a geldiğini duyduğu İlker’i ısrarla arar ve sonunda buluşurlar. Bu yaştan sonra kocasından kalan yüklü borçları ödeyemeyeceği gibi, yaşadığı hayattan, oturduğu görkemli evden ve gördüğü hiçbir şeyden de vazgeçmeye niyeti yoktur. Ve İlker, servetiyle onun için büyük bir hedeftir. Bu planlarını sadece kendisine saklayarak, hala aşık bir kadın gibi çağırmıştır onu. Neyi varsa kullanmaya kararlıdır İlker’i kendisine bağlamak için. Artık ikisi de duldur. Birlikte olmamaları için hiçbir engel kalmadığını söyler Nilay. İlker buna itiraz eder, Kemal’in yeni öldüğünü, nasıl böyle bir şey düşünebildiğini, hiç değilse hatırasına saygılı olması gerektiğini ve asla bir daha görüşmeyeceklerini söyler. Aralarında çıkan tartışma, bir anda büyür ve Nilay İlker’in yaralanmasına neden olur. Evin merdivenlerinden yuvarlanarak düşerken başını çarpan İlker, bilincini kaybeder. Nilay, hayatının hatasını yapar ve anlık bir refleksle, İlker’i gizli bir yerde alıkoymaya karar verir… Ve herkesin hayatını alt üst edecek planı bundan sonra başlar… O gece, ona yardım eden biri daha vardır… Adı bizde saklı olan biri… 
+                    <br><br>
+                    Boran Kim?
+                    <br><br>
+                    Boran, daha doğmadan önce ölen babasını ve çok küçük yaşta kaybettiği annesini hiç tanımamış, kendisini bildi bileli Kemal Bey’i babası yerine koymuştur. Kemal Bey, fabrikasında çalışırken yaşadığı bir kazası sırasında, hayatını kurtaran anneannesi Hayriye’ye her zaman bir vefa, bir can borcu olduğunu söylemiş ve onunla birlikte, torunu Boran’a da sahip çıkmış, Boran’ı okutmuş, büyütmüş, tüm ihtiyaçlarını karşılamıştır. Boran’ı kendi çocuklarından ayırmamış, hatta bazen onlardan bile üstün tutmuş ve Ateş bu durumu hiçbir zaman kabullenememiştir.
+                    <br><br>
+                    Herkesin bildiği bir hikayedir bu! Ancak gerçek göründüğünden çok farklıdır. Arzu daha bebekken, Ateş, ağır bir rahatsızlık geçirir, ilerde kök hücre tedavisi olmasını gerektirecek komplikasyonlar oluşmuştur. Nilay’ın ailesinden gelen genetik bir durum yüzünden, yeni doğan çocukları Arzu’nun da başına gelme olasılığı çok yüksek. Ve Nilay, bir daha çocuğunun olamayacağını öğrenmiştir. Sancılı bir sürecin sonunda, Kemal’in, Nilay dışında bir kadından çocuk yapmasına karar verirler. Ve Boran bu planın bir parçası olarak dünyaya gelir. Boran’ın yabancı uyruklu annesini kısa zamanda hayatlarından çıkarır, bu küçük oğlana da hatasız bir hikaye yazarlar. Tek varlığı anneannesi zannettiği Hayriye bile, gerçekte anneannesi değil, yıllar evvel Kemal beylerin yanında çalışan hizmetlileridir. Boran'ın tek gerçeği babası Kemal’dir ve Boran, bir kurban olarak dünyaya getirilmiştir.
+                    <br><br>
+                    Aslında Ebru’ya aşık olan bu iki adam kardeştir… Bu durumu, Nilay ve Boran’ın annesi dışında hiç kimse bilmiyordur. Ebru’ya tekrar yakınlaşma çabaları, her ikisi için de ilerlerken, Ateş beklenmedik bir şekilde komaya girecek ve o kaçınılmaz ameliyatı olması gerekecektir. İşte o zaman bu sır ortaya çıkacak ve Boran rakibi gördüğü hiç hoşlanmadığı Ateş’e can vermek zorunda kalacaktır. Peki hayatının bir yalan üzerine kurulduğunu öğrenen Boran, her şeyin sebebi olan bu adama hayat verecek midir? Ya Ebru, Boran ve Ateş arasında kaldığında kimi seçecektir? Tam her şeyden vazgeçecekken, babasıyla ilgili gerçekleri, hem de bir yerlerde hala yaşadığını öğrendiğinde Ebru hala eski Ebru olabilecek midir?
+                </p>
+            </div>
+
+            <div class="story-card">
+                <p class="card-text">
+                    DEVAM EDECEK
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h3 class="card-title">Bölüm Hikayeleri</h3>
+                <div class="image-container">
+                    <img class="story-image" src="https://raw.githubusercontent.com/algoritmikruya/sebnem/refs/heads/main/ebruli.kapak.png" alt="Bölüm Hikayeleri Görseli">
+                </div>
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 1 - Şehir Yabancı, Kız Yalnız</h4>
+                <p class="card-text">
+                    Tedirgin ama hızlı adımları, ürkek bakışlarıyla, her halinden buranın yabancısı olduğu anlaşılan Ebru, Üsküdar’ın karmaşasında yolunu bulmaya çalışır. Çantasını kapkaççılara kaptırdığında, farkında bile değildir henüz. İş için geldiği İstanbul’da bir sır gibi ortadan kaybolan babasından, günlerdir haber alamayan Ebru, babasını bulmak için daha önce yalnızca birkaç kez gelip geçtiği, ama hiç tanımadığı bu koca şehirde, kalabalık ve yabancı yüzlerin arasında yürümektedir. Bir anda parasız, kimliksiz ve yapayalnız kaldığını anladığında, çaresizlik içinde güven vermeyen bir taksiciyle yola çıkmak zorunda kalır. İstanbul’un ona hazırladığı ilk sınav başlar. Bu koca şehirde, aradığı adresi bulmak en kolaydır.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 2 - Kız Suskun, Yol Uzun</h4>
+                <p class="card-text">
+                    Taksinin içinde, şoförün laubali tavırlarıyla sıkışıp kalan Ebru, suskunluğunu korumaya çalışsa da babasını düşündükçe, gözyaşlarına engel olamaz. Trafik ve kasvetli gece, gerginliği artırır. Taksi, Beykoz taraflarında, ıssız bir yoldan Ebru’nun aradığı adrese doğru ilerlerken karanlık iyice çöker. Dikiz aynasından Ebru’nun ağladığını gören taksicinin niyeti belirsiz, Ebru ise huzursuzdur.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 3 - Kapanan Kapılar</h4>
+                <p class="card-text">
+                    Sonunda, cılız bahçe ışıklarının az da olsa aydınlattığı, yalnız, büyük ve görkemli evin önüne geldiklerinde, Ebru biraz beklemesini, çantasını çaldırdığı için, evdeki tanıdıklarından para isteyip getireceğini söyler. Şoförün bu yalanlara karnının tok tavrının ardından, birden niyeti de değişir. Ağaçların arasına park ettiği taksinin kapılarını kilitleyip Ebru’yu yalnızlıkla tehdit edercesine sıkıştırmaya başlar. Korku içinde bağırarak, camları yumruklayan genç kız, tam çaresiz kalmışken bir anda taksinin arkasına sert bir darbe iner. Hem Ebru, hem taksici beklenmeyen o anda, kaputu yumruklayan elin sahibine dönerler.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 4 - Gizemli Boran</h4>
+                <p class="card-text">
+                    Taksinin arkasında beliren, bu görkemli evin sahiplerinin avukatı Boran’dır. Ebru, bu gizemli yabancıyla ilk kez göz göze gelir. Kurtuluşun rahatlığı ile karşısındaki adamın cazibesi, yeni bir hikayenin başlangıcı olur. Aralarında geçen kısa, çekingen ama bir o kadar samimi sohbet, az da olsa Ebru’yu rahatlatır. Babasının aradığını, en son bu evdeyken onunla konuştuğunu, sonra da ona ulaşamadığını söyler. Nilay hanım ve ölen kocası, babasının iş yaptığı yakınlarındır. Ebru her şeyi arda arda anlatırken, Boran hayranlıkla izlediği kızın gözlerinin içine bakar, bir an tereddüt etse de sonra kararlı bir şekilde, evine dönüp, polisten haber beklemesini, son çare bile olsa, bu eve asla adım atmamasını, hatta kapılarını dahi çalmaması söyler. “Dönüş paramı ben veririm” dediğinde, zaten sinirleri yıpranmış olan Ebru, gururuna da dokununca bir güzel tersler Boran’ı. 
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 5 - Kimsin sen?</h4>
+                <p class="card-text">
+                    Ebru, geri adım atmadan, söylenmeye devam eder. “Sen ne sandın beni? İki derdimi anlattım diye, sahiplenilmeye muhtaç bir zavallı gibi mi görünüyorum ordan! Siz, hepiniz ne fırsatçıymışsınız ya! Önce o taksici, şimdi sen… Yağmurdan kaçarken, doluya tutulmaya da burada konuşarak zaman kaybetmeye de niyetim yok benim…” diyerek dönüp, ıssız ve karanlık konağa ilerler. Boran, son bir kez daha, dikkat etmesini söyleyerek kızın ardından bakarken, konağın bir odasının ışığının 2 kere yanıp söndüğünü görür ama önemsiz bir ayrıntıdır sadece… Ağaçlı yolun arasında kaybolmak üzere olan Ebru, pusuya yürüyen, ürkek, masum bir ceylan gibidir şimdi.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 6 - İlk Adım</h4>
+                <p class="card-text">
+                    Ebru, çekinerek evin büyük ve karanlık kapısını çalar. Hizmetli Efsun, göz deliğinden baktıktan sonra bir türlü tanıyamadığı bu kıza, biraz da işgüzarlık yaparak kapıyı açmazken, odasından inen, evin sahiplerinden Arzu, küçük bir sohbetten sonra, kızı hatırlayarak, eve davet eder. Ebru, babasını bulma umuduyla içeri ilk adımını atar. Fakat daha ilk anda, kapının yanındaki dev cam melek heykelini düşürüp kırması, sanki kötü bir şeylerin başlangıcının işaret gibidir.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 7 - Tehlikeli Misafirperverlik</h4>
+                <p class="card-text">
+                    Arzu, Ebru’yu üst kata çıkarırken, birden bire yer değiştiren gizemli bir gölge kızın dikkatini çekerek korkutur. Ama Arzu yanlış gördüğünü söyleyerek, saklamaya çalışır. Ebru bu akşamlık erkek kardeşi Ateş’in odasına yerleştirilir. “Bu oda, çarşaflarına kadar temizlenir her gün.” derken, henüz onun anlayamayacağı şekilde gülümser. Işığı açarken; “Keyfine bak! Ne annem, ne abim kimse yok bu gece. Ev bombos, sadece biz. Seni kimse rahatsız etmez merak etme…” Ebru İstanbul’un ışıl ışıl manzarasını gören bu büyük odaya, zevkle döşenmiş mobilyalara büyülenmiş gibi bakar bir an, kendisini küçücük kalmış bir yabancı gibi hisseder. Ait olmadığı bir yerdir, ürküyordur bu debdebeden. “Kimseyi yerinden etmeyim. Hem burası benim için çok fazla…” derken, histerik bir karakter olan Arzu, gerçekten şaşkındır bu kızın çekingen, aşırı mütevazi hallerine, gülmeden duramaz. “Sen gerçek misin Ebru! Ama çok eğlencelisin keriz misin! Rahatına bak dedim ya… Abimin… Ateş’in odası burası! Eeeen temiz odamızdır…” burun kıvıran bir gülümsemeyle yatağa bakar dik dik, “Malum her gün kirlettiği için…” Ebru anlamaya çalışan gözlerle dinlerken, Arzu’nun ruh hali değişir yine; “Boş ver, takılma! Yarın akşamdan önce dönmeyecek zaten. Hadiii geç; bir banyo yap, şu üstündekilerden kurtul… Efsun birazdan sana eğrice bir şeyler bırakır… Yarın konuşuruz her şeyi…” Yanağına da bir öpücük kondururken, öyle derin ve özenerek bakar ki Ebru’ya, çenesini eline alır “Ne kadar masumsun. Sanki hayatın hiçbir lekesi değmemiş ruhuna…” Ebru, kızdan aldığı alkol kokusundan rahatsız olup istemsizce geri çeker kendini. Gülümseyerek çıkar Arzu. Işığı söndüren Ebru, canı sıkkın, yürür cama doğru, şimdi önünde parlayan İstanbul… Ne büyük bir yerdir burası! Nasıl bulacaktır babasını?
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 8 - Gecenin Gizemi</h4>
+                <p class="card-text">
+                    Arzu kendi odasında, onu bekleyen sevgilisi Mete ile tartışmaya girer. Aralarındaki gizli ve hastalıklı ilişki, kavga ve tehditlerle ortaya çıkar. O sırada Ebru, üst kattaki gürültülerle irkilir ve camdan dışarı baktığında müştemilat tarafına gizlice giren adamları fark eder. Odadan gelen kavga sesleri, bahçede dönen gizemli işler yeni sorular doğurur.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 9 - İlk An</h4>
+                <p class="card-text">
+                    Sabah olduğunda, Ebru hâlâ Ateş’in odasında, yatağındadır. Uykusundan uyanırken Ateş de yatağın yanına gelerek bu kızın kim olduğunu anlamaya çalışır. Birlikte olduğu kızlardan hiçbirine benzemeyen bu kızı tanımak için gizlice odasına girer ve ona dokunmaya kalkar. Ebru büyük bir öfke ve korkuyla, gözlerini açtığı gibi, burun buruna geldiği Ateş’e sert bir tokat atar. İlk elektrikli yakınlaşma yaşanır aralarında. Bu sert karşılaşma, ikisi arasındaki kopmayacak bağın da başlangıcı olur.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 10 - Büyük Hata</h4>
+                <p class="card-text">
+                    Konağa sabah karşı, kimseye görünmeden, gizlice girmeye çalışan Nilay, yanında kimsenin görmesini istemediği adamı saklamaya, bir an önce yollamaya çalışır. Arzu ya da Ateş'in evde olup, olmadığından emin değildir. Bu yüzden hizmetçilerine bile görünmesini istemeden ve şüphe uyandırmadan uğurlar adamı. Fakat bu anı fark eden kızı Arzu'yla karşı karşıya kalır arkasını döndüğünde. Anne kızın arasında, kıskançlık ve gerginlik dolu bir tartışma yaşanır. Arzu, dönüp gitmeden önce, dün gece İlker Bey'in kızı Ebru'nun geldiğini, kaybolan babasını aradığını, onu gece yarısı sokakta bırakmamak için, eve aldığını söyleyince Nilay şaşkınlıkla kalır. O kızı nasıl alırsın bu eve demesiyle, merdivenlerden inen Ebru ile göz göze gelirler.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 11 - Hoş Geldin Ebru</h4>
+                <p class="card-text">
+                    Nilay, büyük bir ustalıkla, ruh halini değiştirip, yüzüne taktığı sahte gülümsemesiyle karşılar bu genç ve güzel kızı. Neyse ki Ebru, kadının laflarını duymamıştır. O sabah konağın kadınlarının sadece görünen yüzleriyle tanışır Ebru. Nilay sıcak ama hesaplı bir yakınlık gösterir. Arzu alaycı tavırlarla kıskançlığını saklamaz. Ebru, babasının kaybolduğunu, en son konuştuklarında, kendisini buradan aradığını anlatırken, gözyaşlarını tutamaz. Nilay, dikkatle dinledikten sonra, "Baban buraya hiç gelmedi. Emin misin? Belki sen yanlış anladın ya da sana öyle söyledi" diyerek şüphe uyandıran bir gerçeği açıklar. Tüm olanları, odasının penceresinden izleyen Ateş ise annesi ve kız kardeşiyle, hararetle konuşan Ebru’yu tanımak ister. Kahvesini getiren, Efsun’a bildiklerini anlattırırken, gözlerini hala bahçede hararetle bir şeyler anlatan Ebru'dan alamaz.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 12 - Papatyalar ve Kıskançlık</h4>
+                <p class="card-text">
+                    İş için evden çıkmaya hazırlanan Ateş, sanki dakikalardır onu izlemiyormuş da son anda fark etmiş gibi Ebru'nun yanına gider ve Ateş ile Ebru'nun arasındaki ilk samimi an yaşanır. Ateş sabah odada yaşadıkları yanlış anlama için özür dilemek istediğini söyleyerek, ona bahçeden kopardığı bir papatya uzatır. Ebru o papatyayı aldığı an sadece bir özrü değil, bir daveti de kabul ettiğinin farkında değildir. Aralarındaki elektriği fark etmeyen yoktur. O büyülü anda, sahneye Cemre girer. Ateş'in eski sevgilisi, kıskançlık krizleriyle ortamı zehirler. Bir telefon geldiği için yanlarından ayrılmak zorunda kalan Nilay ise uzaktan her şeyi izler.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 13 - Tarafını Seç</h4>
+                <p class="card-text">
+                    Ateş ve Nilay, şirketin giderek büyüyen sorunlarını tartışırken, Cemre'nin ilişkiye tutunma çabası, Nilay'ın aşağılamalarıyla kırılır. Cemre'nin gerçek adı olan "Hatice" ve aslında bu dünyaya ait olmadığı seyirciye ifşa olur. Gururu kırılan Cemre'nin gözü daha çok hırslanır, Ateş'e olan takıntısı büyür. Evden çıkarken Ebru ile arasında bıçakdan bileneceğini anlayacağımız bir konuşma olur. Ebru altta kalmasa da rahatsız olmuştur. Ateş onun bu duruşuna, sözlerine hayranlıkla ve meşhur gülümsemesiyle bakarken, Ebru da gözlerini kaçıramaz...
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 14 - Yaralı Ruh</h4>
+                <p class="card-text">
+                    İlk karşılaştıkları an'dan beri onu aklından çıkaramayan Boran, Ebru’yu tekrar görmek, nasıl olduğunu bilmek için Nilay hanımların evine gelir. Ebru, babası için yardım isterken Boran, söz verir, babasını bulacağı güne kadar bu işin peşini bırakmayacaktır. Kayıp başvuruları ve diğer tüm yapılacaklar için hemen başlasalar çok iyi olacaktır. Ama önce, bir bahaneyle kendi mahallesine götürür Ebru’yu. Amaç az da olsa kafasını dağıtabilmek, ona yalnız olmadığını gösterip, güven verebilmektir. İlk iş, anne dediği anneannesi, Hayriye Sultan ve mahalleliyle tanıştırır Ebru’yu. Mahallenin samimiyeti ve sıcaklığı, Ebru'nun yaralı ruhuna gerçekten iyi gelir. Boran’ın bu ilgisi, aralarındaki bağı derinleştirir.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 15 - Skandal</h4>
+                <p class="card-text">
+                    Henüz olanlardan haberi olmayan Boran ve Ebru, polise gider, resmi işlemleri hızlandırırlar. Ebru, babası için yardım isterken Boran, söz verir, babasını bulacağı güne kadar bu işin peşini bırakmayacaktır. Kayıp başvuruları ve diğer tüm yapılacaklar için hemen başlasalar çok iyi olacaktır. Ama önce, bir bahaneyle kendi mahallesine götürür Ebru’yu. Amaç az da olsa kafasını dağıtabilmek, ona yalnız olmadığını gösterip, güven verebilmektir. İlk iş, anne dediği anneannesi, Hayriye Sultan ve mahalleliyle tanıştırır Ebru’yu. Mahallenin samimiyeti ve sıcaklığı, Ebru'nun yaralı ruhuna gerçekten iyi gelir. Boran’ın bu ilgisi, aralarındaki bağı derinleştirir.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 16 - Güven Bana</h4>
+                <p class="card-text">
+                    Ebru, babası İlker’in doğum gününde ona sürpriz yapacağını hatırlar. Onunla ilgili anılarından bahsederken, babasıyla tek bir anısının bile olmadığını, onu hiç tanımadan kaybettiğini anlatır. Ebru, Boran’ın bu hassas yerine dokunduğu için anlattıklarından pişman olsa da, Boran, üzülmemesini, ne kadar şanslı olduğunu söyleyerek, “babanı bulacağız” deyip, ona güven verir. İkisi arasındaki samimi anlar, Ebru tarafından sevginin, Boran tarafından ise aşkın tohumlarını ekmeye başlamıştır.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 17 - Ateşe Yürüyorum</h4>
+                <p class="card-text">
+                    Ateş ile oğlu Nilay, şirkette yaşananlar ve aile meseleleri yüzünden sert şekilde çatışır ve derin bir yüzleşmeye girerler. Arzu'nun acilen eve çağırdığı Cemre ise kendini kabul ettirmeye çalışır ama her fırsatta Nilay tarafından aşağılanır. Nilay'ın otoritesi altında herkesin sinirleri gerilir. Evde huzursuzluk büyürken, Cemre, Ateş'e inanan ve yanında olan tek kişidir. Tabi sebebi vardır. Bu olaydan faydalanıp, Ateş ile hemen nişanlanmak. Bu nişanın, gözleri taciz skandalından uzaklaştırıp, insanları sakinleştireceğini düşünür. Ateş'in bir aile kurmaya adım atması herkesi biraz rahatlatacaktır. Ancak bu arsız teklifi hem Ateş, hem Nilay tarafından ağır sözlerle refüze edilir. Cemre, gururunu bir kenara bırakıp, taciz skandalıyla anılan Ateş ile evlenmeyi düşünmesine rağmen, aile tarafından aşağılanmasının altında kalmayacaktır.
+                </p>
+            </div>
+            
+            <div class="story-card">
+                <h4 class="card-title" style="font-size: 1.5rem; border-bottom: none;">Bölüm 18 ve 19 - Ebruli</h4>
+                <p class="card-text">
+                    Cemre’yi oğluna hiçbir zaman yakıştıramayan ama bir türlü de oğluyla ilişkisini tamamen bitiremeyen Nilay, kenar mahalleden gelen bu kızı hiç sevmezse de onu haklı bulur. Cemre o küçük beyni ile doğru söylemiştir. Bu skandalın en kısa sürede kapanması için, Ateş’in bir an önce evlenmesi gerekmektedir. Kafasındaki aday ise bellidir. Kayıp İlker’in, servetinin tek sahibi Ebru!
+                    <br><br>
+                    Nilay, önce kendisini sonra da Ateş’i kurtarmanın planlarını yapmaya başlar. İlk iş oğlunun başına gelenlerin büyük bir yalan olduğuna Ebru’yu ve onu etkilediğinden artık emin olduğu Boran’ı inandırmak olur. Boran, bu ailenin tek bir sözüne dahi artık inanmasa da Ebru’yu onlarla yalnız bırakmamak için sessiz kalacak ama bu meselenin peşini bırakmayacaktır. Bunu da Nilay’a açık yüreklilikle söyler…
+                    <br><br>
+                    Nilay ise Ebru’ya her zamankinden fazla yakın olur ve güvenini kazanmak, onu avuçlarının arasına almak için bir adım daha ileri giderek, babasının kendisine ulaştığını, borçları ve peşinde olan adamlar yüzünden, yurt dışına çıkmak zorunda kaldığını anlatır. Kızının onu merak etmemesini, onun güvenliği için bağlantıya geçtiğini ve her şey yoluna girene kadar, bunun bir sır olarak saklanmasını istediğini de ekler. Buna inanmaya fazlasıyla ihtiyacı olan Ebru, biraz olsun rahatlamıştır. Şimdi Nilay bunu fırsata çevirmelidir. Ateş ve Ebru’nun beraberliğini duyuracağı bir organizasyon düzenleyecektir. Tabi son güne kadar Ebru’nun bundan haberi olmayacaktır.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <p class="card-text">
+                    DEVAM EDECEK
+                </p>
+            </div>
+            
+            <div class="w-full text-center mt-8 text-lg font-semibold">
+                Sema Tensi & Şebnem İlker
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
